@@ -13,14 +13,14 @@ accelerate launch --main_process_port 31225 \
     --mixed_precision bf16 \
     --num_machines 1 \
     --num_processes $NUM_GPUS \
-    /home/user/Downloads/2005047/MEIT/ECG_LLMs/finetune_ecgllm_with_lora_ptbxl.py \
+    /content/ecg_llm/finetune_ecgllm_with_lora_ptbxl.py \
     --model_name_or_path meta-llama/Llama-2-7b-hf \
     --lora_rank 16 \
     --lora_alpha 16 \
     --lora_dropout 0.1 \
     --tokenizer_name meta-llama/Llama-2-7b-hf \
     --use_slow_tokenizer \
-    --train_data_path /home/user/Downloads/2005047/MEIT/ECG_LLMs/ptbxl/ptbxl_ecg_train.jsonl \
+    --train_data_path /content/ecg_llm/ptbxl/ptbxl_ecg_train.jsonl \
     --max_seq_length 128 \
     --preprocessing_num_workers 2 \
     --checkpointing_steps epoch \
@@ -31,7 +31,7 @@ accelerate launch --main_process_port 31225 \
     --warmup_ratio 0.03 \
     --weight_decay 0. \
     --num_train_epochs 3 \
-    --output_dir /home/user/Downloads/2005047/MEIT/ECG_LLMs/save_dir_llama2 \
+    --output_dir /content/ecg_llm/save_dir_llama2 \
     --with_tracking \
     --report_to tensorboard \
     --use_ecg_llm \
@@ -41,7 +41,7 @@ accelerate launch --main_process_port 31225 \
     --eval_step 3200 \
     --test_step 4000 \
     --llm_type llama_2 \
-    --cache_dir /home/user/Downloads/2005047/MEIT/ECG_LLMs/cache-dir
+    --cache_dir /content/ecg_llm/cache-dir
 
 
 # /ecg_llama_7b_new_2   ecg_llama_7b_new_2_llama2_chat_hf  ecg_llama_7b_new_2_Llama-2-7b-hf metric_error_test
