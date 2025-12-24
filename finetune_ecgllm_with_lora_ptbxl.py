@@ -347,7 +347,7 @@ def parse_args():
     parser.add_argument(
         "--cache_dir",
         type=str,
-        default='/home/user/Downloads/2005047/MEIT/ECG_LLMs/cache-dir',
+        default='/content/ecg_llm/cache-dir',
         help=(
             "path to save model"
         ),
@@ -365,7 +365,7 @@ def parse_args():
     parser.add_argument(
         "--val_data_path",
         type=str,
-            default='/home/user/Downloads/2005047/MEIT/ECG_LLMs/ptbxl/ptbxl_ecg_val.jsonl',
+            default='/content/ecg_llm/ptbxl/ptbxl_ecg_val.jsonl',
             help=(
             "val_data_path"
         ),
@@ -374,7 +374,7 @@ def parse_args():
     parser.add_argument(
         "--test_data_path",
         type=str,
-        default='/home/user/Downloads/2005047/MEIT/ECG_LLMs/ptbxl/ptbxl_ecg_test.jsonl',
+        default='/content/ecg_llm/ptbxl/ptbxl_ecg_test.jsonl',
         help=(
             "test_data_path"
         ),
@@ -382,7 +382,7 @@ def parse_args():
     parser.add_argument(
         "--ssl_pretrained_path",
         type=str,
-         default="/home/user/Downloads/2005047/MEIT/ECG_LLMs/vit_tiny_best_ckpt.pth",
+         default="/content/drive/MyDrive/Akanta/ptb-xl/vit_tiny_best_ckpt.pth",
        
         help="Path to ECGCLIP SSL checkpoint (if provided, use it to init ECG_model).",
     )
