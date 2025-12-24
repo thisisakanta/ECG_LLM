@@ -58,7 +58,7 @@ def build_instruct_dataset(ecg_name='mimic', save_dir=None, train_ratio=0.8, val
 
     # Create save directory if it doesn't exist
     if save_dir is None:
-        save_dir = '/home/user/Downloads/2005047/MEIT/ECG_LLMs/ptbxl'
+        save_dir = '/content/ecg_llm/ptbxl'
     os.makedirs(save_dir, exist_ok=True)
 
     if ecg_name == 'ptbxl':
@@ -233,7 +233,7 @@ if __name__ == '__main__':
     print("\n📊 Processing PTB-XL dataset...")
     build_instruct_dataset(
         ecg_name='ptbxl',
-        save_dir='/home/user/Downloads/2005047/MEIT/ECG_LLMs/ptbxl',
+        save_dir='/content/ecg_llm/ptbxl',
         train_ratio=0.8,  # 80% training
         val_ratio=0.1,    # 10% validation
         test_ratio=0.1    # 10% test
