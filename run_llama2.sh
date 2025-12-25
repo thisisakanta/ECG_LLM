@@ -15,7 +15,7 @@ accelerate launch --main_process_port 31225 \
     --num_processes $NUM_GPUS \
     /content/ecg_llm/finetune_ecgllm_with_lora_ptbxl.py \
     --model_name_or_path meta-llama/Llama-2-7b-hf \
-    --use_lora
+    --use_lora \
     --lora_rank 8 \
     --lora_alpha 16 \
     --lora_dropout 0.1 \
