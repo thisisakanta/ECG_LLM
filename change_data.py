@@ -66,7 +66,7 @@ def clean_data_by_file_path(input_file_path, output_file_path):
 
 # --- Execution ---
 input_file = '/content/ecg_llm/ptbxl/ptbxl_ecg_train.jsonl'
-output_file = "/content/ecg_llm/ptbxl/ptbxl_ecg_train.jsonl_cleaned.jsonl"
+output_file = "/content/ecg_llm/ptbxl/ptbxl_ecg_train_cleaned.jsonl"
 
 # Assuming you place your list of records into 'input_data.json'
 # If you only have one record, wrap it in a list [record] in the file.
@@ -75,3 +75,20 @@ output_file = "/content/ecg_llm/ptbxl/ptbxl_ecg_train.jsonl_cleaned.jsonl"
 
 
 clean_data_by_file_path(input_file, output_file)
+
+
+input_file2 = '/content/ecg_llm/ptbxl/ptbxl_ecg_test.jsonl'
+output_file2 = "/content/ecg_llm/ptbxl/ptbxl_ecg_test_cleaned.jsonl"
+
+
+clean_data_by_file_path(input_file2, output_file2)
+
+
+
+input_file3 = '/content/ecg_llm/ptbxl/ptbxl_ecg_val.jsonl'
+output_file3 = "/content/ecg_llm/ptbxl/ptbxl_ecg_val_cleaned.jsonl"
+
+
+clean_data_by_file_path(input_file3, output_file3)
+
+
