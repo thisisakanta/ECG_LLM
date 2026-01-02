@@ -365,7 +365,7 @@ def parse_args():
     parser.add_argument(
         "--val_data_path",
         type=str,
-            default='/content/drive/MyDrive/Akanta/ptb-xl/ptbxl_ecg_val.jsonl',
+            default='/content/ecg_llm/ptbxl/ptbxl_ecg_val.jsonl',
             help=(
             "val_data_path"
         ),
@@ -374,7 +374,7 @@ def parse_args():
     parser.add_argument(
         "--test_data_path",
         type=str,
-        default='/content/drive/MyDrive/Akanta/ptb-xl/ptbxl_ecg_test.jsonl',
+        default='/content/ecg_llm/ptbxl/ptbxl_ecg_test.jsonl',
         help=(
             "test_data_path"
         ),
