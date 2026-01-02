@@ -33,7 +33,7 @@ accelerate launch --main_process_port 31225 \
     --lr_scheduler_type linear \
     --warmup_ratio 0.03 \
     --weight_decay 0. \
-    --num_train_epochs 3 \
+    --num_train_epochs 1 \
     --output_dir /content/drive/MyDrive/Akanta/ptb-xl/save_dir_llama2 \
     --with_tracking \
     --report_to tensorboard \
